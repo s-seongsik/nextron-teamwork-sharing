@@ -22,10 +22,10 @@ export default function(props: AppProps) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <Layout>
-      <ThemeProvider theme={theme}>
+      {/* <ThemeProvider theme={theme}> */}
         <CssBaseline />
         <Component {...pageProps} />
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
       </Layout>
     </React.Fragment>
   );

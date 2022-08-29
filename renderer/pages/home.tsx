@@ -27,9 +27,6 @@ function Home() {
 
   return (
     <React.Fragment>
-      <Head>
-        <title>Home - Nextron (with-typescript-material-ui)</title>
-      </Head>
       <div className={classes.root}>
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle>Super Secret Password</DialogTitle>
