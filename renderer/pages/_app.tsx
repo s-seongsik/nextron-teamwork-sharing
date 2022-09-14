@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Layout from '../components/layout/layout'
 import { theme } from '../lib/theme';
 import type { AppProps } from 'next/app';
 
@@ -21,12 +20,10 @@ export default function(props: AppProps) {
       <Head>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
-      <Layout>
       {/* <ThemeProvider theme={theme}> */}
         <CssBaseline />
         <Component {...pageProps} />
       {/* </ThemeProvider> */}
-      </Layout>
     </React.Fragment>
   );
 }
